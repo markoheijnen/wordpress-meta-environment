@@ -26,5 +26,6 @@ else
 
 	svn up $SITE_DIR/
 	svn up $SITE_DIR/glotpress
+	svn up $SITE_DIR/gp-plugins
 
 fi
