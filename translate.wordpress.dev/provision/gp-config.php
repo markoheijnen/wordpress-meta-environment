@@ -70,7 +70,7 @@ define('CUSTOM_USER_META_TABLE', 'wporg_usermeta');
 $gp_table_prefix = 'gp_';
 
 
-define( 'WPORGPATH', dirname( dirname( dirname( __FILE__ ) ) ) . '/wordpressorg.dev/public_html/' );
+define( 'WPORGPATH', dirname( __FILE__ ) . '/' );
 
 define( 'GP_TMPL_PATH', 'gp-templates/' );
 define( 'GP_PLUGINS_PATH', 'gp-plugins/' );

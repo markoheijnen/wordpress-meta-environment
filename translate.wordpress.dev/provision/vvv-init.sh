@@ -29,3 +29,12 @@ else
 	svn up $SITE_DIR/gp-plugins
 
 fi
+
+# Pull global header/footer
+curl -o $SITE_DIR/header.php https://wordpress.org/header.php
+sed -i 's/<\/head>/\n<?php gp_head(); ?>\n\n&/' $SITE_DIR/header.php
+
+curl -o $SITE_DIR/footer.php https://wordpress.org/footer.php
+sed -i 's/<\/body>/\n<?php gp_footer(); ?>\n\n&/' $SITE_DIR/footer.php
+
+
