@@ -74,3 +74,6 @@ define( 'WPORGPATH', dirname( __FILE__ ) . '/' );
 
 define( 'GP_TMPL_PATH', 'gp-templates/' );
 define( 'GP_PLUGINS_PATH', 'gp-plugins/' );
+
+define( 'GP_URL', 'http://translate.wordpress.dev/' );
+
