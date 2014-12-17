@@ -21,6 +21,10 @@ if [ ! -d $SITE_DIR ]; then
 	# Setup Plugins
 	svn co https://meta.svn.wordpress.org/sites/trunk/translate.wordpress.org/includes/gp-plugins/ $SITE_DIR/gp-plugins
 
+	# Move our files
+	cp $PROVISION_DIR/index.php $SITE_DIR
+	cp $PROVISION_DIR/wp-config.php $SITE_DIR
+
 else
 	printf "\n#\n# Updating $SITE_DOMAIN\n#\n"
 
