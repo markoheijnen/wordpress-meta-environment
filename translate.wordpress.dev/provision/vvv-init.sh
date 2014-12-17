@@ -18,6 +18,8 @@ if [ ! -d $SITE_DIR ]; then
 	# Setup GlotPress
 	svn co https://glotpress.svn.wordpress.org/trunk/ $SITE_DIR/glotpress
 
+	# Setup Plugins
+	svn co https://meta.svn.wordpress.org/sites/trunk/translate.wordpress.org/includes/gp-plugins/ $SITE_DIR/gp-plugins
 
 else
 	printf "\n#\n# Updating $SITE_DOMAIN\n#\n"
